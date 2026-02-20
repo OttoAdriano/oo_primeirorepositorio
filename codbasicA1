@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+
+
+        int[] vetor;
+
+        vetor = new int[10];
+
+        int i = 0;
+        int n = 1;
+        int l = 0;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("digite 10 numero: ");
+
+        for (i = 0; i < 10; i++) {
+            vetor[i] = scan.nextInt();
+        }
+
+        while (n < 11) {
+            System.out.printf("\nvoce digitou %d \n::>posicao numero %d\n", vetor[l], n);
+            n++;
+            l++;
+        }
+        
+    }
+
+}
