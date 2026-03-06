@@ -1,0 +1,27 @@
+public class ContaBancaria {
+    public int numero;
+    public int agencia;
+    public double saldo;
+    public String cliente;
+
+    //sacar,depositar,ver saldo
+
+    public double verSaldo(){
+        return saldo;
+    }
+    public void sacar(double valor){
+        saldo= saldo - valor;
+    }
+    public void depositar(double valor)
+{
+    saldo= saldo+valor;
+
+}
+public String toString()
+{
+return "\nagencia:"+agencia +"\nnumero:"+numero+"\ncliente:"+cliente+"\nsaldo: R$"+saldo;
+    
+
+}
+    
+}
