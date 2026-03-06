@@ -25,3 +25,36 @@ public class Main {
 
 }
 }
+
+
+v2
+
+import java.util.Set;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.print("sistema bancario");
+
+        ContaBancaria conta;
+
+        conta = new ContaBancaria();
+
+        conta.setagencia  (123);
+        conta.setnumero (123456);
+        conta.setcliente ("black penciliano");
+        conta.setsaldo (1000.50);
+
+        
+        
+        System.out.println(conta.toString());
+        System.out.println("depositando...");
+        conta.depositar(300);
+        System.out.println(conta.toString());
+        System.out.println("sacando o black money sujo");
+        conta.sacar(900);
+        System.out.println(conta.toString());
+
+
+}
+}
