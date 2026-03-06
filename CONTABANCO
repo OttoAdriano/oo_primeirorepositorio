@@ -25,3 +25,66 @@ return "\nagencia:"+agencia +"\nnumero:"+numero+"\ncliente:"+cliente+"\nsaldo: R
 }
     
 }
+
+
+v2
+public class ContaBancaria {
+    private int numero;
+    private int agencia;
+    private double saldo;
+    private String cliente;
+
+    //sacar,depositar,ver saldo
+
+    public String  getcliente(){
+        return cliente;
+    }
+    public void setcliente(String cliente) {
+
+        this.cliente = cliente;
+    }
+
+    public double  getsaldo(){
+        return saldo;
+    }
+    public void setsaldo(double saldo) {
+
+        this.saldo = saldo;
+    }
+    public int  getagencia(){
+        return agencia;
+    }
+    public void setagencia(int agencia) {
+
+        this.agencia = agencia;
+    }
+    public int  getnumero(){
+        return numero;
+    }
+    public void setnumero(int numero) {
+
+        this.numero = numero;
+    }
+
+
+
+
+    public double verSaldo(){
+        return saldo;
+    }
+    public void sacar(double valor){
+        saldo= saldo - valor;
+    }
+    public void depositar(double valor)
+{
+    saldo= saldo+valor;
+
+}
+public String toString()
+{
+return "\nagencia:"+agencia +"\nnumero:"+numero+"\ncliente:"+cliente+"\nsaldo: R$"+saldo;
+    
+
+}
+    
+}
